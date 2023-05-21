@@ -32,7 +32,7 @@ forge clean
 
 5. Deploy contracts
 ```bash
-# source .env # Optional
+source .env
 forge script script/deploy.s.sol:Deploy --rpc-url $SEPOLIA_RPC_URL --broadcast --verify -vvvv
 ```
 
