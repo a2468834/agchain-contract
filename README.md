@@ -32,13 +32,12 @@ forge clean
 
 5. Deploy contracts
 ```bash
-source .env
-forge script script/deploy.s.sol:Deploy --rpc-url $SEPOLIA_RPC_URL --broadcast --verify -vvvv
+forge script script/deploy.s.sol:Deploy --rpc-url sepolia --broadcast --verify -vvvv
 ```
 
 6. Other commands
 ```bash
-$ cast run <TXN_HASH> --rpc-url $SEPOLIA_RPC_URL -vvv
-$ cast tx <TXN_HASH> --rpc-url $SEPOLIA_RPC_URL
-$ cast receipt <TXN_HASH> --rpc-url $SEPOLIA_RPC_URL
+$ cast run <TXN_HASH> --rpc-url sepolia -vvv
+$ cast tx <TXN_HASH> --rpc-url sepolia
+$ cast receipt <TXN_HASH> --rpc-url sepolia
 ```
